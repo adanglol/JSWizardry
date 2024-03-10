@@ -1,6 +1,6 @@
 
 
-
+console.log("Hello World!");
 //  Where we will interpret the code and display the output
 
 // Custom console.log implementation
@@ -31,3 +31,7 @@ function displayOutput(output) {
     var outputDiv = document.getElementById('output');
     outputDiv.textContent = output;
 }
+
+
+
+

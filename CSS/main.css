@@ -1,5 +1,7 @@
 body {
-    font-family: Arial, sans-serif;
+    color :black;
+
+    font-family: "Madimi One", sans-serif !important;
 }
 textarea {
     width: 100%;

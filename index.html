@@ -1,50 +1,103 @@
-
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Wizardry</title>
+    <title>JSWizardry - Learn JavaScript and Make Things Like Magic!</title>
+
     <link rel="icon" href="assets/JS_ICON.png">
-    <!-- JS AND CSS -->
-    <link rel="stylesheet" href="CSS/main.css">
-    <script src = "JS/script.js" defer></script>
-    <!-- BOOTSTRAP AND jQuery -->
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="JS/ui.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+
+        body{
+            overflow: hidden; /* Prevent scrolling */
+            color :black;
+
+            font-family: "Madimi One", sans-serif !important;
+        }
+        /* Custom styles for this template */
+        .navbar {
+        background-color: #343a40;
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+        color: #ffffff;
+        }
+        .navbar-nav .dropdown-menu {
+        background-color: #343a40;
+        }
+        .dropdown-item {
+        color: #ffffff;
+        }
+        .jumbotron {
+        background-color: #167c7ab3;
+        height : 100vh;
+        }
+    </style>
 </head>
 <body>
-    <h1>JSWizardry</h1>
-    <label for="code">Enter your JavaScript code:</label>
-    <textarea id="code">
-// Example code using classes
-class Person {
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
-    }
+    <video autoplay muted loop style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+        <source src="assets/BgVideo.mp4" type="video/mp4">
+      </video>
+      
 
-    introduce() {
-        return 'Hello, my name is ' + this.name + ' and I am ' + this.age + ' years old.';
-    }
-}
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">JSWizardry</a>
 
-var person = new Person('Alice', 30);
-customConsole.log(person.introduce());
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Lessons
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Lesson 1: Introduction to JavaScript</a>
+            <a class="dropdown-item" href="#">Lesson 2: Variables and Data Types</a>
+            <a class="dropdown-item" href="#">Lesson 3: Functions and Control Flow</a>
+            <a class="dropdown-item" href="#">Lesson 4: DOM Manipulation</a>
+            <a class="dropdown-item" href="#">Lesson 5: Event Handling</a>
+          </div>
+        </li>
+      </ul>
+      <!-- Add more links or buttons here if needed -->
+    </div>
+  </div>
+</nav>
 
 
-// Example code using objects
-var person = {
-    name: 'John',
-    age: 30,
-    greet: function() {
-        return 'Hello, my name is ' + this.name + ' and I am ' + this.age + ' years old.';
-    }
-};
+<!-- Hero Section -->
+<div class="jumbotron text-center">    
+    <!-- Content -->
+    <div class="container">
+      <h1 class="display-4">Welcome to JSWizardry</h1>
+      <br>
+      <p class="lead">Learn to code like its magic! Understand JavaScript and unleash your creativity!</p>
+      <hr class="my-4">
+      <p>Start your journey now</p>
+      <a class="btn btn-primary btn-lg" href="lessons/lesson_one.html" role="button">Get Started</a>
+    </div>
+  </div>
+  
 
-customConsole.log(person.greet());
-    </textarea>
-    <button onclick="interpret()">Run Code</button>
-    <div id="output"></div>
-    <a target="_blank" href="https://icons8.com/icon/108784/javascript">JavaScript</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<!-- Bootstrap JS and jQuery (Optional, for Bootstrap components that require JavaScript) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>
