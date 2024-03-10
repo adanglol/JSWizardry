@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Wizardry</title>
+    <link rel="icon" href="assets/JS_ICON.png">
+    <!-- JS AND CSS -->
+    <link rel="stylesheet" href="CSS/main.css">
+    <script src = "JS/script.js" defer></script>
+    <!-- BOOTSTRAP AND jQuery -->
+</head>
+<body>
+    <h1>JSWizardry</h1>
+    <label for="code">Enter your JavaScript code:</label>
+    <textarea id="code">
+// Example code using classes
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    introduce() {
+        return 'Hello, my name is ' + this.name + ' and I am ' + this.age + ' years old.';
+    }
+}
+
+var person = new Person('Alice', 30);
+customConsole.log(person.introduce());
+
+
+// Example code using objects
+var person = {
+    name: 'John',
+    age: 30,
+    greet: function() {
+        return 'Hello, my name is ' + this.name + ' and I am ' + this.age + ' years old.';
+    }
+};
+
+customConsole.log(person.greet());
+    </textarea>
+    <button onclick="interpret()">Run Code</button>
+    <div id="output"></div>
+    <a target="_blank" href="https://icons8.com/icon/108784/javascript">JavaScript</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+</body>
+</html>
+
