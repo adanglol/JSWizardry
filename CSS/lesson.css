@@ -1,0 +1,10 @@
+body{
+    background-color: #7c85a9 !important;
+    
+}
+
+div.container-fluid{ 
+    background-color: #6e9b2f;
+    border: 1px solid #000000;
+    padding: 20px;
+}
